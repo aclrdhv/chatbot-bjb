@@ -1,14 +1,14 @@
 # Chatbot API bank bjb
 
-### Tech Stack
+## Tech Stack
 
-## Programming Language
+### Programming Language
 - Python
 
-## Frontend
+### Frontend
 - HTML
 - JavaScript
 - CSS
 
-## Backend
+### Backend
 - Flask

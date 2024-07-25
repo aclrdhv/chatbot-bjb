@@ -7,7 +7,8 @@ def detect_intent(query):
         'requirement': ['requirement', 'cara menggunakan', 'syarat'],
         'request_headers': ['request headers'],
         'signature_format': ['format signature', 'signature format'],
-        'inquiry_balance': ['cek saldo', 'saldo', 'cek sald', 'balance', 'inquiry balance']
+        'inquiry_balance': ['cek saldo', 'saldo', 'cek sald', 'balance', 'inquiry balance'],
+        'transaction_history': ['transaction history', 'riwayat transaksi', 'transaksi', 'riwayat', 'history']
     }
 
     if len(query) < 3:

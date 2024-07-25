@@ -40,5 +40,11 @@ def generate_response(intent):
       return api_data['response']
     else:
       return "Maaf, API tidak ditemukan."
+  elif intent == "transaction_history":
+    api_data = fetch_api_info("transaction_history")
+    if api_data:
+      return api_data['response']
+    else:
+      return "Maaf, API tidak ditemukan."
   else:
     return "Maaf, saya tidak mengerti. Silakan coba lagi."

@@ -46,5 +46,47 @@ def generate_response(intent):
       return api_data['response']
     else:
       return "Maaf, API tidak ditemukan."
+  elif intent == "account_internal":
+    api_data = fetch_api_info("account_internal")
+    if api_data:
+      return api_data['response']
+    else:
+      return "Maaf, API tidak ditemukan."
+  elif intent == "account_external":
+    api_data = fetch_api_info("account_external")
+    if api_data:
+      return api_data['response']
+    else:
+      return "Maaf, API tidak ditemukan."
+  elif intent == "overbooking":
+    api_data = fetch_api_info("overbooking")
+    if api_data:
+      return api_data['response']
+    else:
+      return "Maaf, API tidak ditemukan."
+  elif intent == "transfer_online":
+    api_data = fetch_api_info("transfer_online")
+    if api_data:
+      return api_data['response']
+    else:
+      return "Maaf, API tidak ditemukan."
+  elif intent == "card_registration":
+    api_data = fetch_api_info("card_registration")
+    if api_data:
+      return api_data['response']
+    else:
+      return "Maaf, API tidak ditemukan."
+  elif intent == "payment":
+    api_data = fetch_api_info("payment")
+    if api_data:
+      return api_data['response']
+    else:
+      return "Maaf, API tidak ditemukan."
+  elif intent == "validate_otp":
+    api_data = fetch_api_info("validate_otp")
+    if api_data:
+      return api_data['response']
+    else:
+      return "Maaf, API tidak ditemukan."
   else:
-    return "Maaf, saya tidak mengerti. Silakan coba lagi."
+    return "Maaf, saya tidak mengerti. ketik ."

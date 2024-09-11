@@ -12,10 +12,9 @@ def generate_response(intent):
     ]
     return random.choice(responses)
   elif intent == "goodbye":
-    responses = [
-      "Jika butuh bantuan dengan hal lain, jangan ragu untuk bertanya. Terima kasih, sampai jumpa!"
-    ]
-    return random.choice(responses)
+    return "Jika butuh bantuan dengan hal lain, jangan ragu untuk bertanya. Terima kasih, sampai jumpa!"
+  elif intent == "help":
+    return "Berikut list keyword API yang tersedia.\n- cek saldo \n- riwayat transaksi \n- requirement \n- signature format \n- akun internal \n- akun eksternal \n- overbooking \n- transfer online \n- registrasi kartu \n- pembayaran \n- otp validasi"
   elif intent == "requirement":
     api_data = fetch_api_info("requirement")
     if api_data:
@@ -88,5 +87,17 @@ def generate_response(intent):
       return api_data['response']
     else:
       return "Maaf, API tidak ditemukan."
+  elif intent == "admin":
+    api_data = fetch_api_info("admin")
+    if api_data:
+      return api_data['response']
+    else:
+      return "Maaf, API tidak ditemukan."
+  elif intent == "parameter":
+    api_data = fetch_api_info("parameter")
+    if api_data:
+      return api_data['response']
+    else:
+      return "Maaf, API tidak ditemukan."
   else:
-    return "Maaf, saya tidak mengerti. ketik ."
+    return 'Maaf, saya tidak mengerti. ketik "help" untuk melihat keyword yang tersedia.'

@@ -4,6 +4,7 @@ def detect_intent(query):
     intents = {
         'greeting': ['halo', 'hai', 'hello'],
         'goodbye': ['bye', 'selamat tinggal', 'sampai jumpa', 'gak', 'tidak', 'engga', 'tidak ada', 'gaada', 'nggak ada'],
+        'help': ['help'],
         'requirement': ['requirement', 'cara menggunakan', 'syarat', 'diperlukan'],
         'request_headers': ['request headers'],
         'signature_format': ['format signature', 'signature format', 'tanda tangan'],
@@ -15,7 +16,8 @@ def detect_intent(query):
         'transfer_online': ['transfer online'],
         'card_registration': ['card registration', 'registrasi kartu', 'debit'],
         'payment': ['payment', 'pembayaran'],
-        'validate_otp': ['validate', 'otp', 'validasi']
+        'validate_otp': ['validate', 'otp', 'validasi'],
+        'parameter': ['parameter']
     }
 
     if len(query) < 3:
